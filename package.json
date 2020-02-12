@@ -14,5 +14,9 @@
     "tenant"
   ],
   "author": "jrmiranda",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@adonisjs/fold": "^4.0.9"
+  }
 }
