@@ -2,11 +2,14 @@
 A simple AdonisJs package that allows you to use multi tenancy in your application.
 
 ## Instalation
-1. Install package:
+Install package with `adonis install`:
 ```
-npm install --save @jrmiranda/adonisjs-polis
+adonis install @jrmiranda/adonisjs-polis
 ```
-2. Register Polis provider inside `start/app.js` file:
+In case of installation using `npm` or `yarn`, you must copy the `config/index.js` file into your app config directory as `config/polis.js`.
+
+## Setup
+Register Polis provider inside `start/app.js` file:
 ```
 const providers = [
   ...
@@ -14,7 +17,7 @@ const providers = [
   ...
 ]
 ```
-3. Set up the middleware in `start/kernel.js` file:
+Set up the middleware in `start/kernel.js` file:
 ```
 const namedMiddleware = {
   ...
@@ -31,8 +34,7 @@ const Model = use('Model')
 class User extends Model {
   static boot () {
     super.boot()
-
-    this.addTrait('TenantAware')
+    this.addTrait('@provider:TenantAware')
   }
 }
 ```

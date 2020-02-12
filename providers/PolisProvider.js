@@ -1,4 +1,4 @@
-const { ServiceProvider } = use('@adonisjs/fold')
+const { ServiceProvider } = require('@adonisjs/fold')
 
 class PolisProvider extends ServiceProvider {
   async register () {
