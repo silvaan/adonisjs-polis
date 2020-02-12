@@ -10,7 +10,7 @@ npm install --save @jrmiranda/adonisjs-polis
 ```
 const providers = [
   ...
-  '@jrmiranda/polis/providers/PolisProvider'
+  '@jrmiranda/adonisjs-polis/providers/PolisProvider'
   ...
 ]
 ```

@@ -9,9 +9,7 @@ module.exports = async (cli) => {
     await cli.copy(inFile, outFile)
     cli.command.completed('create', 'config/polis.js')
   } catch (error) {
-    console.log('----------Instructions-----------')
     console.log(error)
-    console.log('---------------------')
     // ignore error
   }
 }

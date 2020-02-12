@@ -9,10 +9,7 @@ class TenantAware {
       builder.where(Polis.getTenantColumn(), Polis.getTenant())
     })
 
-    console.log('register')
-
     Model.addHook('beforeSave', async (modelInstance) => {
-      console.log('Saving model')
       modelInstance[Polis.getTenantColumn()] = Polis.getTenant()
     })
   }

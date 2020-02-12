@@ -33,8 +33,6 @@ class TenantDetector {
         break;
     }
 
-    console.log(tenant)
-
     request.tenant = tenant
     Polis.setTenant(tenant)
 
