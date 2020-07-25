@@ -6,7 +6,7 @@ module.exports = {
   | Tenant Column
   |--------------------------------------------------------------------------
   |
-  | The tenant column in your models. It must also be addded to your
+  | The tenant column in your models. It must also be added to your
   | migrations.
   |
   */
