@@ -11,7 +11,7 @@ class TenantDetector {
    * @param {Request} ctx.request
    * @param {Function} next
    */
-  async handle ({ request }, next, properties) {
+  async handle ({ request, auth }, next, properties) {
     const tenantSource = properties[0] || Polis.getTenantSource()
     const tenantKey = Polis.getTenantSourceKey()
     let tenant = null
