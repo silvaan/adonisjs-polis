@@ -1,6 +1,6 @@
 {
   "name": "@jrmiranda/adonisjs-polis",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple multi tenancy for AdonisJS.",
   "main": "index.js",
   "repository": "git@github.com:jrmiranda/adonisjs-polis.git",
