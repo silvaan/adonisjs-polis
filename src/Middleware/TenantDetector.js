@@ -28,7 +28,10 @@ class TenantDetector {
         break;
       case 'subdomain':
         tenant = request.subdomains()[0]
-        break;
+				break;
+			case 'user':
+				tenant = auth.user?.id
+				break;
       default:
         break;
     }

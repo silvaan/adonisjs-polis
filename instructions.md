@@ -34,4 +34,4 @@ Route.group(() => {
   Route.post('/login', 'SessionController.create')
 }).middleware(['tenant'])
 ```
-You can override the default tenant source in `config/polis.js` file for certain routes by specifying the source of tenant as property of the middleware(header, url_query, url_param, subdomain). For example: `middleware(['tenant:subdomain'])`.
+You can override the default tenant source in `config/polis.js` file for certain routes by specifying the source of tenant as property of the middleware(header, url_query, url_param, subdomain, user). For example: `middleware(['tenant:subdomain'])`.

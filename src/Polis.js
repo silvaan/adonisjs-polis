@@ -12,7 +12,7 @@ class Polis {
   setTenant (tenant) {
     if (!tenant) {
       throw InvalidArgumentException.invalidParameter(
-        'Tenant must be a valid string',
+        'Tenant must be a valid string or integer',
         tenant
       )
     }

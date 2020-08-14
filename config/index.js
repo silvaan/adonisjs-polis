@@ -18,10 +18,10 @@ module.exports = {
   |--------------------------------------------------------------------------
   |
   | The source of the tenant in every request.
-  | Available Sources - header, url_query, url_param, subdomain
+  | Available Sources - header, url_query, url_param, subdomain, user
   |
   */
-  tenantSource: 'subdomain',
+  tenantSource: 'url_param',
 
   /*
   |--------------------------------------------------------------------------
